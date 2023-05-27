@@ -13,7 +13,7 @@ string output_choose_language(int point) {
 	case 1: msg += "Введите размер изображение по координатам Y: "; break;
 	case 2: msg += "Введите данные изображения (w / b): "; break;
 	case 3: msg += "преобразование в RLE: \n"; break;
-	case 4: msg += "Ошибка ввода!!! Возможно вы перепутали координаты!"; break;
+	case 4: msg += "Ошибка ввода!!! Возможно вы перепутали координаты или ввели не праивльно данные!"; break;
 
 	case 5: msg += "Choose language (Key 1 - Russian; Others - English): \nВыберете язык (Клавиша 1 - Русский; Другие - Английский): "; break;
 
@@ -21,7 +21,7 @@ string output_choose_language(int point) {
 	case 11: msg += "Input size picture coordinate Y: "; break;
 	case 12: msg += "Input your picture(w / b): "; break;
 	case 13: msg += "Converting to RLE: \n"; break;
-	case 14: msg += "Input error!!! Perhaps you mixed up the coordinates!"; break;
+	case 14: msg += "Input error!!! Perhaps you mixed up the coordinates or entered incorrect data!"; break;
 	}
 
 	return msg;
@@ -29,7 +29,7 @@ string output_choose_language(int point) {
 
 string converting_to_zip(string convert, int sizex, int sizey, bool choose_language) {
 	char w = 'w', b = ' b';
-	int count = 1, count2 = 1;
+	short count = 1, count2 = 1;
 	char char1, char2;
 	bool flag = true;
 	string msg = "";
