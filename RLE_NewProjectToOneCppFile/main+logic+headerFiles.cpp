@@ -41,7 +41,7 @@ string converting_to_zip(string convert, int sizex, int sizey, bool choose_langu
 		char2 = convert[i + 1];
 
 
-		if (char1 != w and char1 != b)
+		if (char1 != w and char1 != b or char2 != w and char2 != b and i != all_size - 1)
 		{
 			int point = choose_language ? 4 : 14;
 			return output_choose_language(point);
